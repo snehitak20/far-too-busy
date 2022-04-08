@@ -2,14 +2,19 @@
     // Current day is displayed at top of the page--> use moment.js
     var day = moment().format('dddd, MMM Do YYYY');
     $("#currentDay").html(day);
+
 // Scroll down calendar
     // Timeblocks are present for standard business hours (9-5pm)-->within the HTML file (DONE)
+    // Timeblocks are color coded to indicate whether the event is in th past, present, or future
     function colorBlock() {
         var hourNow = moment().hour();
 
+        // After "split": we remove the dash on the id of the time-block so that it does not identify as two ids
+        // Will specifically target the number that was turned from a string 
         $(".time-block").each(function() {
             var hourTime = parseInt($(this).attr("id").split('-')[1]);
-
+            
+            // Compares the timeblock hour to the current hour to set up the color-coding effect
             if(hourTime < hourNow) {
                 $(this).addClass("past");
             }
@@ -25,8 +30,10 @@
         });
     }
 
+    // Rechecks for the schedule color every 20 seconds to auto fill with new colors 
     colorBlock();
     var interval = setInterval(colorBlock, 20000)
+
 // For EACH timeblock: 
     // Can enter the event + SAVE event in the timeblock --> use localStorage
     $(".saveBtn").on("click", function(){
