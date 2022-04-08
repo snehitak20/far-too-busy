@@ -1,9 +1,11 @@
+/* These attributes are for everything that is within the <body> */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
+/* Actually builds the timeblock's display */
 textarea{
   background: transparent;
   border: none;
@@ -13,6 +15,7 @@ textarea{
   padding: 10px;
 }
 
+/* This is for the banner that is at the very top of the webpage */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -21,27 +24,32 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+/* Pre-wrap: sequences of white space are preserved */
 .description{
   white-space: pre-wrap;
 }
 
+/* This is universal to the areas within the timeblock */
 .time-block{
   text-align: center;
   border-radius: 15px;
 }
 
+/* This actually creates the row for the time-block */
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
 }
 
+/* Specifically for the part of the timeblock that contains the time */
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
+/* Color coding for timeblocks */
 .past {
   background-color: #d3d3d3;
   color: white;
@@ -57,6 +65,7 @@ textarea{
   color: white;
 }
 
+/* This is specifically for the area of the time-block that contains the save button */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -65,6 +74,7 @@ textarea{
   color: white;
 }
 
+/* This is for the hover properties when the mouse hovers over the save button */
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
