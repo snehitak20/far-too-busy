@@ -25,7 +25,9 @@ Within the JavaScript file, jQuery was heavily used. `moment().format()` is impo
  
  To use this daily planner, pick the timeblock that the event will typed into. After writing in the event, click the save button. Use the refresh button, and the event will still be saved in that timeblock. 
 
- ## Installation 1. Create a new repository on Github. 
+ ## Installation 
+ 
+1. Create a new repository on Github. 
     - Press the "+" sign on the top right hand corner, or the "new" button on your GitHub homepage. 
     - Create an unique name for your repository, and make the respository public. 
     - Click the "README" option to include the "README" page. 
